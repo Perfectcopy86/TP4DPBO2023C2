@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP4 DPBO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">Member</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="company.php">Company</a>
+                </li>
+
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-lg-6 m-auto">
+        <form method="POST" action="">
+        <br><br>
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <h1 class="text-white text-center">  Create New Member </h1>
+                </div><br>
+                <label> NAME: </label>
+                <input type="text" name="name" class="form-control" placeholder="add name" required> <br>
+                <label> EMAIL: </label>
+                <input type="text" name="email" class="form-control" placeholder="add email" required> <br>
+                <label> PHONE: </label>
+                <input type="text" name="phone" class="form-control" placeholder="add phone" required> <br>
+                <label> JOIN DATE: </label>
+                <input type="date" name="join_date" class="form-control" required> <br>
+                <div class='mb-5'>
+                  <label> Company: </label>
+                    <select class="custom-select form-control" name="id_company" required>
+                        <option selected>Pilih Company</option>
+                        OPTION
+                    </select>
+                </div>
+                <button class="btn btn-success" type="submit" name="add"> Submit </button><br>
+                <a class="btn btn-info" type="submit" name="cancel" href="index.php"> Cancel </a><br>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
